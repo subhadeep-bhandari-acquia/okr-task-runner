@@ -1,0 +1,20 @@
+uuid: 79805210-ad0f-4632-9afd-0ae1b824a91c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - feexpert
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: feexpert_page_title
+theme: feexpert
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

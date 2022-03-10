@@ -1,0 +1,9 @@
+name: FE Expert OKR
+description: Frontend expert OKR assignment.
+type: theme
+package: custom
+base theme: stable
+core: 8.x
+core_version_requirement: ^8 || ^9
+libraries:
+  - feexpert/global-styling

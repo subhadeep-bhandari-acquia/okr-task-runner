@@ -1,0 +1,22 @@
+uuid: 818aa710-14f6-43fb-becb-e293bc857449
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - feexpert
+_core:
+  default_config_hash: kigu8pTxXt1qGR2NJ5HHdC4G2G1wsDrIjLPKBT5wUBc
+id: feexpert_content
+theme: feexpert
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

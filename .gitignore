@@ -1,0 +1,19 @@
+.DS_Store
+vendor/
+
+# Ignore drupal core.
+docroot/core
+
+# Ignore paths that contain user-generated content.
+docroot/sites/*/files
+/files-private
+docroot/sites/*/private
+
+# Ignore contrib modules. These should be created during build process.
+docroot/modules/contrib
+docroot/themes/contrib
+docroot/profiles/contrib
+
+# Ignore custom theme build artifacts
+docroot/themes/custom/*/node_modules
+docroot/themes/custom/*/asset

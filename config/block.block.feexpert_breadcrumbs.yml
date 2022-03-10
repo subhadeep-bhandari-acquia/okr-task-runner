@@ -1,0 +1,22 @@
+uuid: 1e999820-35da-4b4f-90fb-da7eabd71711
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - feexpert
+_core:
+  default_config_hash: y0bXRvKYQQKkf_RVxA3aOPGpIfKKsDOzzrWYCgjxJ9Y
+id: feexpert_breadcrumbs
+theme: feexpert
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

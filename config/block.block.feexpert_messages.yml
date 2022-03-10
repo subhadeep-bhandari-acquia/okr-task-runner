@@ -1,0 +1,22 @@
+uuid: d8be3886-ec94-4832-89ec-493acf72cc0b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - feexpert
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: feexpert_messages
+theme: feexpert
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }
