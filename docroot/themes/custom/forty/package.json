@@ -1,0 +1,21 @@
+{
+  "name": "forty",
+  "version": "1.0.0",
+  "description": "Package manager for forty theme.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "subhadeep.bhandari@acquia.com",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "drupal-sass-breakpoints": "^1.0.1",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp.spritesmith": "^6.12.1"
+  }
+}

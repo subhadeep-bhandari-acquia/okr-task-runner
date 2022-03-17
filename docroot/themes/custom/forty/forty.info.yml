@@ -1,0 +1,16 @@
+name: Forty
+description: Custom theme for forty non-drupal theme.
+type: theme
+package: custom
+base theme: stable
+core_version_requirement: ^8 || ^9
+
+libraries:
+  - forty/global-styling
+
+regions:
+  header: Header
+  banner: Banner
+  content: Content
+  contact: 'ContactUs'
+  footer: 'Footer'
