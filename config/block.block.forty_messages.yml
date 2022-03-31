@@ -1,0 +1,22 @@
+uuid: f7b4e30c-7c88-470a-91be-3733101de3a2
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - forty
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: forty_messages
+theme: forty
+region: header
+weight: -1
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

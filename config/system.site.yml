@@ -2,9 +2,9 @@ _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
 uuid: 35d60ae2-4be1-4d59-bf5a-1d6a56f53498
-name: FEExpert
+name: FORTY
 mail: feexpert@email.com
-slogan: ''
+slogan: 'BY HTML UP'
 page:
   403: ''
   404: ''

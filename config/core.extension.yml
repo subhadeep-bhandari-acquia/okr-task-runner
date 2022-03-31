@@ -12,11 +12,13 @@ module:
   comment: 0
   config: 0
   contact: 0
+  contact_block: 0
   contextual: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
+  fe_expert_core: 0
   field: 0
   field_ui: 0
   file: 0
@@ -35,6 +37,7 @@ module:
   rdf: 0
   search: 0
   shortcut: 0
+  social_media_links: 0
   system: 0
   taxonomy: 0
   text: 0
@@ -42,6 +45,8 @@ module:
   tour: 0
   update: 0
   user: 0
+  views_slideshow: 0
+  views_slideshow_cycle: 0
   views_ui: 0
   views: 10
   standard: 1000
@@ -51,4 +56,5 @@ theme:
   stable: 0
   classy: 0
   feexpert: 0
+  forty: 0
 profile: standard

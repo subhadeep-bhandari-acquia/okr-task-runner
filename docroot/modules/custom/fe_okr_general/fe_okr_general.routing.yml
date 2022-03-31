@@ -1,0 +1,14 @@
+fe_okr_general.jquery_task:
+  path: '/admin/jquery-task'
+  defaults:
+    _title: 'Autocomplete Form'
+    _form: 'Drupal\fe_okr_general\Form\AutocompleteForm'
+  requirements:
+    _permission: 'access content'
+
+fe_okr_general.autocomplete:
+  path: '/autocomplete-form/childterm/{tid}'
+  defaults:
+    _controller: '\Drupal\fe_okr_general\Controller\AutocompleteController::autoCompleteHandler'
+  requirements:
+    _access: 'TRUE'

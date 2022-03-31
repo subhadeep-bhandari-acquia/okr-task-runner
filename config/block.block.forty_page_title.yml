@@ -1,0 +1,20 @@
+uuid: 3de9ad5c-c793-4ddd-b478-f7a6839b447b
+langcode: en
+status: false
+dependencies:
+  theme:
+    - forty
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: forty_page_title
+theme: forty
+region: content
+weight: -3
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

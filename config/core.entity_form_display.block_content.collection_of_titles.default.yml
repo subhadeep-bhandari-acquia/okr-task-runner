@@ -1,0 +1,33 @@
+uuid: 279a3b55-fed8-47be-85e1-fd10c16be4e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.collection_of_titles
+    - field.field.block_content.collection_of_titles.body
+    - field.field.block_content.collection_of_titles.field_tiles
+id: block_content.collection_of_titles.default
+targetEntityType: block_content
+bundle: collection_of_titles
+mode: default
+content:
+  field_tiles:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true

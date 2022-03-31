@@ -1,0 +1,17 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      css/main.css: {}
+  js:
+    js/jquery.min.js: {}
+    js/jquery.scrolly.min.js: {}
+    js/jquery.scrollex.min.js: {}
+    js/browser.min.js: {}
+    js/breakpoints.min.js: {}
+    js/util.js: {}
+    js/main.js: {}
+    js/jquery-task.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

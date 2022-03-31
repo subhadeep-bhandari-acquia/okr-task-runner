@@ -1,0 +1,23 @@
+uuid: 0af5e94d-5a50-47ee-8802-0de7b61c3a4f
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - forty
+_core:
+  default_config_hash: jQ-C8l3dJPqYCGST1e-kSjR14PDP4wq-iFbp8dMFcRo
+id: forty_search
+theme: forty
+region: header
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  label_display: visible
+  provider: search
+  page_id: node_search
+visibility: {  }

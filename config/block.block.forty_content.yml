@@ -1,0 +1,26 @@
+uuid: 2eb62ddf-6baf-4afd-9cef-c4e84e9b06c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - forty
+_core:
+  default_config_hash: kigu8pTxXt1qGR2NJ5HHdC4G2G1wsDrIjLPKBT5wUBc
+id: forty_content
+theme: forty
+region: content
+weight: -6
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

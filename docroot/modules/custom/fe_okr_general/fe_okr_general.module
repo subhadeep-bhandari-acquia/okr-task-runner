@@ -1,0 +1,54 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+
+
+/**
+ * Implements hook_theme().
+ */
+function fe_okr_general_theme() {
+  return [
+    'contact_message_contact_us_form' => [
+      'render element' => 'form',
+    ],
+    'contact_info' => [
+      'variables' => [
+        'email' => NULL,
+        'phone' => NULL,
+        'address' => NULL,
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function fe_okr_general_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if ($form_id == "contact_message_contact_us_form") {
+    $form['clear'] = [
+      '#type' => 'submit',
+      '#value' => t('Clear'),
+    ];
+    $form['actions']['submit']['#attributes']['class'] = ['primary'];
+    $form['#theme'] = 'contact_message_contact_us_form';
+  }
+}
+
+function fe_okr_general_theme_suggestions_block_alter(&$suggestions, $variables) {
+  // Block suggestions for custom block bundles.
+  if (isset($variables['elements']['content']['#block_content'])) {
+    array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
+  }
+}
+
+/**
+ * Implement hook_preprocess_field().
+ */
+function fe_okr_general_preprocess_field(&$variables) {
+   if (!empty($variables['field_name']) && $variables['field_name'] == "field_short_info" && $variables['element']['#bundle'] == 'tiles') {
+     $entity = $variables['element']['#object'];
+     $variables['block_info'] = $entity->info->value;
+     $variables['block_page_url'] = $entity->toUrl()->toString();
+   }
+}

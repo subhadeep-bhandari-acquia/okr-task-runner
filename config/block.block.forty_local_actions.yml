@@ -1,0 +1,20 @@
+uuid: 910a0ffa-a93e-420e-bf7a-1cfe16d2c81c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - forty
+_core:
+  default_config_hash: XRdb8LpbArVA6CpuuEZxzi50JIdjsJaCCZ5o3fH0Blk
+id: forty_local_actions
+theme: forty
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

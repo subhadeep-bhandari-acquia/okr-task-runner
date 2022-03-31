@@ -1,0 +1,30 @@
+uuid: f7f62c5d-337f-4033-81c6-28b94ecb59d9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:collection_of_titles:40100c1f-884c-409c-8232-c99bdd1fdaf1'
+  module:
+    - block_content
+    - system
+  theme:
+    - forty
+id: tilesgallery
+theme: forty
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:40100c1f-884c-409c-8232-c99bdd1fdaf1'
+settings:
+  id: 'block_content:40100c1f-884c-409c-8232-c99bdd1fdaf1'
+  label: 'Tiles gallery'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
