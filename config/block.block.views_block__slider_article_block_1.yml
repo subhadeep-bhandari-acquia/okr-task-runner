@@ -1,0 +1,29 @@
+uuid: ec2e54bf-6d5c-4e47-aceb-304a75984c2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slider_article
+  module:
+    - system
+    - views
+  theme:
+    - forty
+id: views_block__slider_article_block_1
+theme: forty
+region: banner
+weight: 0
+provider: null
+plugin: 'views_block:slider_article-block_1'
+settings:
+  id: 'views_block:slider_article-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/1

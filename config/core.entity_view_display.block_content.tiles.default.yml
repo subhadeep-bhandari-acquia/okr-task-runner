@@ -1,0 +1,35 @@
+uuid: dfe99a4a-6fc5-4ab2-ae9c-6f21397b1c0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tiles
+    - field.field.block_content.tiles.body
+    - field.field.block_content.tiles.field_image
+    - field.field.block_content.tiles.field_short_info
+  module:
+    - image
+id: block_content.tiles.default
+targetEntityType: block_content
+bundle: tiles
+mode: default
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_short_info:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true

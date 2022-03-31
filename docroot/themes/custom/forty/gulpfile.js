@@ -3,7 +3,7 @@ var concat = require('gulp-concat');
 var sass = require('gulp-sass');
 var cleanCSS = require('gulp-clean-css');
 var uglify = require('gulp-uglify');
-var spritesmith = require('gulp.spritesmith');
+var jshint = require('gulp-jshint');
 
 // Compile, combine and minify scss files.
 exports.cssBundle = function() {
@@ -14,6 +14,12 @@ exports.cssBundle = function() {
     .pipe(cleanCSS())
     .pipe(gulp.dest('./css'));
 }
+
+gulp.task('jshint', function () {
+    return gulp.src('./js/*-validated.js')
+    .pipe(jshint({esnext:true}))
+    .pipe(jshint.reporter('default'));
+});
 
 // Combine and minify js files.
 exports.jsBundle = function() {
@@ -42,4 +48,11 @@ gulp.task('watch', function(){
     gulp.watch('js/*.js',  gulp.series('jsBundle'));
     gulp.watch('./sass/**/*.scss',  gulp.series('cssBundle'));
     gulp.watch('images/icons/*.png',  gulp.series('imageSprite'));
+});
+
+gulp.task('lint', function () {
+    return gulp.src('./js/es6-validated.js')
+      .pipe(jshint())
+      .pipe(jshint.reporter('default')) // linting passed
+      .pipe(jshint.reporter('fail')); // linting failed
 });

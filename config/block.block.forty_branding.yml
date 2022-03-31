@@ -1,0 +1,33 @@
+uuid: b3fcd326-10f0-4671-bd4a-91684532cd9c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - forty
+_core:
+  default_config_hash: d-0emr1mEq7sFKDu5RHUJckvNk62hvIZdRwPEfnJyGg
+id: forty_branding
+theme: forty
+region: header
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: true
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous

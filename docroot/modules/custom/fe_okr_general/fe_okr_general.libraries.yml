@@ -1,0 +1,7 @@
+fe_okr_general_js_jquery_task:
+  version: 1.x
+  js:
+    js/form.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

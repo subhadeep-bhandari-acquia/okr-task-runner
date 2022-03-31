@@ -1,0 +1,12 @@
+uuid: 5a7fc0ba-4817-486b-8d84-d28fbf54d197
+langcode: en
+status: true
+dependencies: {  }
+id: contact_us
+label: 'Contact Us'
+recipients:
+  - dipwebmaster@example.com
+reply: ''
+weight: 0
+message: 'Your Message has been sent'
+redirect: ''

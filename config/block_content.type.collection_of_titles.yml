@@ -1,0 +1,8 @@
+uuid: 63e22397-ef04-4de3-b994-d6dcb62b8b58
+langcode: en
+status: true
+dependencies: {  }
+id: collection_of_titles
+label: 'Collection of titles'
+revision: 0
+description: 'Create Galary contains multiple tiles item'

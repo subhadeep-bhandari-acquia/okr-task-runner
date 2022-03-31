@@ -1,0 +1,22 @@
+uuid: b834a168-6182-42d9-bf26-40ebd4095719
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - forty
+_core:
+  default_config_hash: y0bXRvKYQQKkf_RVxA3aOPGpIfKKsDOzzrWYCgjxJ9Y
+id: forty_breadcrumbs
+theme: forty
+region: header
+weight: -3
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

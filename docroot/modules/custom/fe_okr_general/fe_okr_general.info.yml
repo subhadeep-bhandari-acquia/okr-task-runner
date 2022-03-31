@@ -1,0 +1,5 @@
+name: Frontend expert OKR module.
+description: Provides FE expert OKR general functionalities.
+core_version_requirement: ^9 || ^10
+type: module
+package: custom

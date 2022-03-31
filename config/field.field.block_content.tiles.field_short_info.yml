@@ -1,0 +1,19 @@
+uuid: cc1ce056-8f29-43ab-900f-fb5db124dd82
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tiles
+    - field.storage.block_content.field_short_info
+id: block_content.tiles.field_short_info
+field_name: field_short_info
+entity_type: block_content
+bundle: tiles
+label: 'Short Info'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

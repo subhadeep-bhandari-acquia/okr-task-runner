@@ -1,0 +1,33 @@
+uuid: f338472b-790b-4be1-a197-cea53255924c
+langcode: en
+status: true
+dependencies:
+  module:
+    - fe_expert_core
+  theme:
+    - forty
+id: contactinfoblock
+theme: forty
+region: contact
+weight: -7
+provider: null
+plugin: contact_info_block
+settings:
+  id: contact_info_block
+  label: 'Contact Info Block'
+  label_display: '0'
+  provider: fe_expert_core
+  fe_expert_contact_info:
+    email: information@untitled.tld
+    phone: '(000) 000-0000 x12387'
+    address: |-
+      1234 Somewhere Road #5432<br/>
+                            Nashville, TN 00000<br/>
+                            United States of America
+    address_format: full_html
+  email: information@untitled.tld
+  phone: '(000) 000-0000 x12387'
+  address:
+    value: "<p>1234 Somewhere Road #5432<br />\r\nNashville, TN 00000<br />\r\nUnited States of America</p>\r\n"
+    format: full_html
+visibility: {  }

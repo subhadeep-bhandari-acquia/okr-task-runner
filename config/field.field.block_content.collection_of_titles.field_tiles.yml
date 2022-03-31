@@ -1,0 +1,29 @@
+uuid: d2c976cf-cbb0-4196-9d7b-27a23ad85b9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.collection_of_titles
+    - block_content.type.tiles
+    - field.storage.block_content.field_tiles
+id: block_content.collection_of_titles.field_tiles
+field_name: field_tiles
+entity_type: block_content
+bundle: collection_of_titles
+label: Tiles
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      tiles: tiles
+    sort:
+      field: changed
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

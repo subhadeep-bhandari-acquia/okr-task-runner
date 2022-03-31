@@ -1,0 +1,24 @@
+uuid: 6523165e-d192-427a-80a0-841fed3b8d46
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contact_us
+  module:
+    - contact_block
+  theme:
+    - forty
+id: contactblock
+theme: forty
+region: contact
+weight: -8
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Contact block'
+  label_display: '0'
+  provider: contact_block
+  contact_form: contact_us
+  form_display: default
+visibility: {  }

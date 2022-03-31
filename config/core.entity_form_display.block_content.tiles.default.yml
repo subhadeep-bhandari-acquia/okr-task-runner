@@ -1,0 +1,43 @@
+uuid: f6b820a5-35dc-4e76-b4e7-5a3b6c749653
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tiles
+    - field.field.block_content.tiles.body
+    - field.field.block_content.tiles.field_image
+    - field.field.block_content.tiles.field_short_info
+    - image.style.thumbnail
+  module:
+    - image
+id: block_content.tiles.default
+targetEntityType: block_content
+bundle: tiles
+mode: default
+content:
+  field_image:
+    type: image_image
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_short_info:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true

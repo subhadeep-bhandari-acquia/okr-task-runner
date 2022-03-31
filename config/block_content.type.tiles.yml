@@ -1,0 +1,8 @@
+uuid: 48fcf2d2-bbdf-43bb-9602-09499d0cd235
+langcode: en
+status: true
+dependencies: {  }
+id: tiles
+label: Tiles
+revision: 0
+description: 'Create tiles content'

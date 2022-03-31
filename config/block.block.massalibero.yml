@@ -1,0 +1,30 @@
+uuid: 191ae5e3-813a-4360-b2b4-8a4be6065e0a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:11031694-1966-48fe-92eb-33e55a5d5d16'
+  module:
+    - block_content
+    - system
+  theme:
+    - forty
+id: massalibero
+theme: forty
+region: content
+weight: -4
+provider: null
+plugin: 'block_content:11031694-1966-48fe-92eb-33e55a5d5d16'
+settings:
+  id: 'block_content:11031694-1966-48fe-92eb-33e55a5d5d16'
+  label: 'Massa libero'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
